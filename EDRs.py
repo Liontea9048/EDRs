@@ -13,11 +13,11 @@ if __name__ == "__main__":
     geant4Data, mcnp6Data, phitsData = getFiles()
     organTWF = getTWF()
     geant4Result = calEffectiveDose(geant4Data, organTWF)
-    mcnp6Result = calEffectiveDose(mcnp6Data, organTWF)
-    phitsResult = calEffectiveDose(phitsData, organTWF)
+    # mcnp6Result = calEffectiveDose(mcnp6Data, organTWF)
+    # phitsResult = calEffectiveDose(phitsData, organTWF)
 
     # writeResultEffDose(geant4Result, mcnp6Result, phitsResult)
-    # writeResultEffDose(geant4Result)
+    writeResultEffDose(geant4Result)
     # writeResultEffDose(mcnp6Result)
     # writeResultEffDose(phitsResult)
 
@@ -26,4 +26,4 @@ if __name__ == "__main__":
     # writeOrganEffectiveDose(mcnp6Result)
     # writeOrganEffectiveDose(phitsResult)
 
-    getAnnualDose(geant4Result, mcnp6Result, phitsResult)
+    # getAnnualDose(geant4Result, mcnp6Result, phitsResult)
